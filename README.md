@@ -16,7 +16,7 @@ Train the VQG model:
 ```
 python main.py --model_path=[where_to_save]
 ```
-Demo VQG with single image:
+Demo VQG with single image: (you need to download pre-trained VGG19 [here](https://github.com/machrisaa/tensorflow-vgg))
 ```
 python main.py --is_train=False --test_image_path=[path_to_image] --test_model_path=[path_to_model]
 ```
@@ -25,13 +25,19 @@ python main.py --is_train=False --test_image_path=[path_to_image] --test_model_p
 ## Experiment Result
 
 <img src="https://github.com/JamesChuanggg/VQG/blob/master/assets/demo.jpg?raw=true" width="400">    
-Model: How many zebras are in the picture ?
+***Model: How many zebras are in the picture ?***
 
 <img src="https://github.com/JamesChuanggg/VQG/blob/master/assets/demo2.jpg?raw=true" width="400">     
-Model: Where is the chair ?
+***Model: Where is the chair ?***
+
+## Allo: Google AI Assistant
+We also let Allo reply to these images. Here's the result.        
+<img src="https://github.com/JamesChuanggg/VQG/blob/master/assets/allo.png?raw=true" width="600">
 
 ## TODO
 Apply [VQG dataset](https://arxiv.org/abs/1603.06059) instead of VQA to ask more useful question. 
 
 ## Reference
-- Deepmind's [post](https://deepmind.com/blog/decoupled-neural-networks-using-synthetic-gradients/) on Decoupled Neural Interfaces Using Synthetic Gradients
+- [Generating Natural Questions About an Image](https://arxiv.org/abs/1603.06059), ACL 2016.
+- [show_and_tell.tensorflow](https://github.com/jazzsaxmafia/show_and_tell.tensorflow)
+- [tensorflow-vgg](https://github.com/machrisaa/tensorflow-vgg)
