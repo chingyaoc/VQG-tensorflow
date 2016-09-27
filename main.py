@@ -19,7 +19,7 @@ tf.app.flags.DEFINE_string('input_img_h5', './data_img.h5', 'path to the h5file 
 tf.app.flags.DEFINE_string('input_ques_h5', './data_prepro.h5', 'path to the h5file containing the preprocessed dataset')
 tf.app.flags.DEFINE_string('input_json', './data_prepro.json', 'path to the json file containing additional info and vocab')
 tf.app.flags.DEFINE_string('model_path', './models/', 'where should we save')
-tf.app.flags.DEFINE_string('vgg_path', './data/vgg16.tfmodel', 'momentum for adam')
+tf.app.flags.DEFINE_string('vgg_path', './vgg16.tfmodel', 'momentum for adam')
 tf.app.flags.DEFINE_string('gpu_fraction', '2/3', 'define the gpu fraction used')
 tf.app.flags.DEFINE_string('test_image_path', './assets/demo.jpg', 'the image you want to generate question')
 tf.app.flags.DEFINE_string('test_model_path', './models/model-250', 'model we saved')
