@@ -28,7 +28,9 @@ python main.py --is_train=False --test_image_path=[path_to_image] --test_model_p
 ***Model: How many zebras are in the picture ?***
 
 <img src="https://github.com/JamesChuanggg/VQG/blob/master/assets/demo2.jpg?raw=true" width="400">     
-***Model: Where is the chair ?***
+***Model: Where is the chair ?***     
+
+**Problem**: Since we use VQA dataset which is designed for challenge so its question must be relevant to image content. No wonder the model train from VQA can not ask natural questions like human. We will adapt [VQG dataset](https://arxiv.org/abs/1603.06059) once it release to ask more meaningful question.
 
 ## Allo: Google AI Assistant
 We also let Allo reply to these images. Here's the result.        
