@@ -48,7 +48,7 @@ class Question_Generator():
 
         image_emb = tf.nn.xw_plus_b(self.image, self.encode_img_W, self.encode_img_b)        # (batch_size, dim_hidden)
 
-        state = tf.zeros([self.batch_size, self.lstm.state_size])
+	state = self.lstm.zero_state(self.batch_size,tf.float32)
         loss = 0.0
         with tf.variable_scope("RNN"):
             for i in range(self.n_lstm_steps): 
